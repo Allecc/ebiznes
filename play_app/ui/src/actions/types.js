@@ -1,0 +1,11 @@
+export const ADD_TO_CART = 'ADD_TO_CART';
+export const REMOVE_FROM_CART = 'REMOVE_FROM_CART';
+export const GET_CART = 'GET_CART';
+export const ADD_QUANTITY = 'ADD_QUANTITY';
+export const SUB_QUANTITY = 'SUB_QUANTITY';
+export const FETCH_ITEMS = 'FETCH_ITEMS';
+export const UPDATE_FILTER = 'UPDATE_FILTER';
+export const GET_USER = 'GET_USER';
+export const CHECKOUT = 'CHECKOUT';
+export const SET_USER = 'SET_USER';
+export const ERROR = 'ERROR';

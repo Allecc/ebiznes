@@ -1,2 +1,41 @@
+.idea/
+# dependencies
+/play_app/ui/node_modules
+.pnp
+.pnp.js
+
+# testing
+/play_app/ui/coverage
+
+# production
+/play_app/ui/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+/play_app/ui/npm-debug.log*
+/play_app/ui/yarn-debug.log*
+/play_app/ui/yarn-error.log*
+
 *.class
 *.log
+
+# sbt specific
+.cache/
+.history/
+.lib/
+/play_app/dist/*
+/play_app/target/
+/play_app/lib_managed/
+/play_app/src_managed/
+/play_app/project/boot/
+/play_app/project/plugins/project/
+
+# Scala-IDE specific
+.scala_dependencies
+.worksheet
+.idea

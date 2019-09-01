@@ -1,0 +1,40 @@
+GET         /                               controllers.ApplicationController.index
+GET         /signOut                        controllers.ApplicationController.signOut
+GET         /authenticate/:provider         controllers.SocialAuthController.authenticate(provider)
+
+GET     /products/:id               controllers.ProductController.getProductById(id: Int)
+GET     /products                   controllers.ProductController.getProducts
+GET     /products/                   controllers.ProductController.getProducts
+POST    /products                   controllers.ProductController.post
+
+GET     /users                      controllers.UserController.getUsers
+GET     /user                      controllers.UserController.getUser
+GET     /isAdmin                      controllers.UserController.isAdmin
+GET     /users/:id                  controllers.UserController.getUserById(id: java.util.UUID)
+GET     /users/role/:id             controllers.UserController.getByRole(id: Int)
+POST     /users                      controllers.UserController.post
+
+GET     /orders                     controllers.OrderController.getOrders
+GET     /orders/:id                 controllers.OrderController.getOrderById(id: java.util.UUID)
+GET     /orders/sale/:id                 controllers.OrderController.getOrdersByOrderId(id: java.util.UUID)
+POST    /orders                     controllers.OrderController.post
+POST    /ordersMany                     controllers.OrderController.postMany
+
+GET     /categories                 controllers.CategoryController.getCategories
+GET     /categories/:id             controllers.CategoryController.getCategoryById(id: Int)
+POST    /categories                 controllers.CategoryController.post
+
+GET     /roles                      controllers.RoleController.getRoles
+GET     /roles/:id                  controllers.RoleController.getRoleById(id: Int)
+POST    /roles                      controllers.RoleController.post
+
+GET     /sales                      controllers.SalesController.getSales
+GET     /sales/:id                  controllers.SalesController.getSaleById(id: java.util.UUID)
+GET     /sales/user/:id             controllers.SalesController.getByUserId(id: java.util.UUID)
+POST    /sales                      controllers.SalesController.post
+
+GET         /assets/*file                   controllers.Assets.versioned(file)
+->          /webjars                        webjars.Routes
+
+GET     /                           controllers.FrontendController.index()
+GET     /*file                      controllers.FrontendController.assetOrDefault(file)
