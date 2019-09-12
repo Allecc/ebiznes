@@ -93,3 +93,49 @@ alter table products
     add constraint fk_category_products
         foreign key (category)
             references categories (id);
+
+INSERT INTO user_roles(id, role)
+VALUES (1, 'admin'),
+       (2, 'user');
+INSERT INTO categories(id, name)
+VALUES (1, 'zabawki'),
+       (2, 'plecionki'),
+       (3, 'szycie'),
+       (4, 'pieczenie');
+INSERT INTO products(sku, name, description, regular_price, discount_price, quantity, taxable, image, category)
+VALUES ('0000001',
+        'Teddy Bears',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+        100,
+        80,
+        40,
+        true,
+        'zabawki.jpg',
+        1),
+       ('0000002',
+        'Pikachu',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        250,
+        220,
+        10,
+        true,
+        'pikachu.jpg',
+        3),
+       ('0000003',
+        'Purse',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        50,
+        40,
+        10,
+        true,
+        'torebka.jpg',
+        2),
+       ('0000004',
+        'Cookies',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        15,
+        12,
+        10,
+        true,
+        'ciastka.jpg',
+        4);
